@@ -3,3 +3,4 @@ numpy
 koalas
 pytz
 matplotlib
+jupyter
