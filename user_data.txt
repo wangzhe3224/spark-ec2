@@ -2,8 +2,8 @@
 # env
 # export PYSPARK_DRIVER_PYTHON=jupyter
 # export PYSPARK_DRIVER_PYTHON_OPTS='notebook --no-browser'
-export AWS_SECRET_ACCESS_KEY=xxx
-export AWS_ACCESS_KEY_ID=xxxx
+echo "export AWS_SECRET_ACCESS_KEY=xxxxxx" >> /home/ec2-user/.bashrc
+echo "export AWS_ACCESS_KEY_ID=xxxx" >> /home/ec2-user/.bashrc
 # pip3 install
 curl https://raw.githubusercontent.com/wangzhe3224/spark-ec2/master/requirements.txt >> requirements.txt
 pip3 install -r requirements.txt
