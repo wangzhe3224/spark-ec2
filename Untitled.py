@@ -14,8 +14,7 @@ from datetime import time
 from datetime import datetime
 from dateutil.parser import parse
 
-# Any performance issues?
-# ks.set_option("compute.ops_on_diff_frames", True)
+# Need this to distributed records
 ks.set_option('compute.default_index_type', 'distributed')
 
 
@@ -221,9 +220,4 @@ res['end'] = end_time
 
 print('Duration: ', end_time - start_time)
 res['duration'] = end_time - start_time
-
-
-# In[33]:
-
-
-res
+print(res)
